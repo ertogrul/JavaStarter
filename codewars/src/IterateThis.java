@@ -1,8 +1,9 @@
 import java.util.ArrayList;
 
 public class IterateThis {
-    // ITERATE USING STRING
     /*
+    // ITERATE USING STRING
+
     public static ArrayList<Integer> metoda(long number) {
 
         ArrayList<Integer> result = new ArrayList<>();
@@ -10,10 +11,12 @@ public class IterateThis {
 
         for (int i = 0; i < s.length(); i++) {
             result.add(s.charAt(i) - '0');
+            //result.add(s.charAt(i)); //<--------------- bez "- '0'" to nie dziala. Czemu?
             System.out.println(result);
         }
         return result; // MSD at start of list
     }*/
+
 
     // ITERATE USING MODULO
     public static ArrayList<Integer> metoda(long number) {
@@ -31,6 +34,6 @@ public class IterateThis {
 
     public static void main(String[] args) {
         IterateThis pointer = new IterateThis();
-        pointer.metoda(2342342);
+        pointer.metoda(2342557);
     }
 }
