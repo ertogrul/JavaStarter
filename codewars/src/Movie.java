@@ -6,9 +6,9 @@ public class Movie {
         int n = 3;
         do {
             A = ticket * n;
-            B = card * ticket * Math.pow(perc, n);
+            //B = card * ticket * Math.pow(perc, n);
             System.out.println("A: " + A);
-            System.out.println("B: " + B);
+            //System.out.println("B: " + B);
             n++;
         } while (n < 100 /*A > B*/);
         return 10;
