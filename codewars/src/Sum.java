@@ -24,6 +24,12 @@ public class Sum {
         }
         return arrSum;*/
 
+        int aa = 1;
+        int bb = 10;
+        bb = aa/2;
+        System.out.println("bb: " + bb);
+
+
         // stream instead of loop
         return IntStream.of(arr1).sum() + IntStream.of(arr2).sum();
 

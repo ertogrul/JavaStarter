@@ -1,4 +1,5 @@
-public class PartList {
+
+public class PartList {/*
 
     public static String[][] partlist(String[] arr) {
         String [][] a;
@@ -12,7 +13,7 @@ public class PartList {
         PartList pointer = new PartList();
         pointer.partlist();
     }
-
+*/
 }
 
 

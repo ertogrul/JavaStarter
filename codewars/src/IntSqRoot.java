@@ -7,7 +7,7 @@ public class IntSqRoot {
             previous_guess = guess;
             guess = (guess + n / guess) / 2;
             System.out.println("guess: " + guess);
-            System.out.println("while: " + (guess - previous_guess));
+            System.out.println("while condition: " + (guess - previous_guess));
         } while (Math.abs(guess - previous_guess) >= 1);
         return count;
     }
