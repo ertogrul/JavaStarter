@@ -7,7 +7,7 @@ class StepInPrimes {
         // g - step
         // m - search start
         // n - search end
-        //
+
         ArrayList tempArr = new ArrayList();
         int counter = 0;
         long [] arr = {0, 0};
@@ -18,22 +18,17 @@ class StepInPrimes {
         for (long i = m; i <= n; i++) {
             if (isPrime(i) == true) {
                 tempArr.add(i);
-                System.out.println("tempArr: " + tempArr);
             }
         }
 
         for (int j = 0; j < tempArr.size(); j++) {
             for (int shiftVar = 1; shiftVar < tempArr.size() - counter; shiftVar++) {
-                //long temp = (long) tempArr.get(j+shiftVar) - (long) tempArr.get(j);
-                //if (g == ((int) tempArr.get(j+shiftVar) - (int) tempArr.get(j))) {
                 if (resultFound == true) break;
 
                 long temp2 =  (long) tempArr.get(j+shiftVar) - (long) tempArr.get(j);
                 if (temp2 == g) {
                     arr[0] = (long) tempArr.get(j);
                     arr[1] = (long) tempArr.get(j+shiftVar);
-                    System.out.println("KONIEC");
-                    for (long d : arr) System.out.println(d);
                     resultFound = true;
                     break;
                 }
@@ -49,12 +44,10 @@ class StepInPrimes {
     public static boolean isPrime(long n) {
         if (n % 2 == 0) return false;
         for(int a = 3; a * a <= n; a += 2) {
-            //System.out.println(a);
             if(n % a == 0) return false;
         }
         return true;
     }
-
     public static void main (String[] args) {
         // StepInPrimes pointer = new StepInPrimes();
         // StepInPrimes.step(2, 2, 50); // [3,5]
